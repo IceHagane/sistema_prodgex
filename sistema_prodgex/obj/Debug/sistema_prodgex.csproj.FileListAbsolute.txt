@@ -1,0 +1,9 @@
+C:\Users\IceHagane\Documents\Programación 3\Clases\Forms\sistema_prodgex\sistema_prodgex\bin\Debug\sistema_prodgex.exe.config
+C:\Users\IceHagane\Documents\Programación 3\Clases\Forms\sistema_prodgex\sistema_prodgex\bin\Debug\sistema_prodgex.exe
+C:\Users\IceHagane\Documents\Programación 3\Clases\Forms\sistema_prodgex\sistema_prodgex\bin\Debug\sistema_prodgex.pdb
+C:\Users\IceHagane\Documents\Programación 3\Clases\Forms\sistema_prodgex\sistema_prodgex\obj\Debug\sistema_prodgex.csprojResolveAssemblyReference.cache
+C:\Users\IceHagane\Documents\Programación 3\Clases\Forms\sistema_prodgex\sistema_prodgex\obj\Debug\sistema_prodgex.Properties.Resources.resources
+C:\Users\IceHagane\Documents\Programación 3\Clases\Forms\sistema_prodgex\sistema_prodgex\obj\Debug\sistema_prodgex.csproj.GenerateResource.Cache
+C:\Users\IceHagane\Documents\Programación 3\Clases\Forms\sistema_prodgex\sistema_prodgex\obj\Debug\sistema_prodgex.exe
+C:\Users\IceHagane\Documents\Programación 3\Clases\Forms\sistema_prodgex\sistema_prodgex\obj\Debug\sistema_prodgex.pdb
+C:\Users\IceHagane\Documents\Programación 3\Clases\Forms\sistema_prodgex\sistema_prodgex\obj\Debug\sistema_prodgex.LoginPrincipal.resources
