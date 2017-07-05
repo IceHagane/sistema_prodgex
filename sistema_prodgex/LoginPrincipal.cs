@@ -49,23 +49,14 @@ namespace sistema_prodgex
         {
             string CadSql;
             CadSql = "SELECT nom_usuario, id_tipo_usuario from usuarios where pass_usuario='"+pass+"';";
-            con.EjecutarConsulta(CadSql);
-            if ( == 1)
-            {
-                MessageBox.Show("Usuario o Contraseña Invalido");
-                txtUsuario.Focus();
-            }
-            else
-            {
-                MessageBox.Show("Exito!");
-            }
-
-           
+            con.EjecutarConsulta(CadSql); 
         }
 
         private void cmdIngresar_Click(object sender, EventArgs e)
         {
-            IngresoCompleto();
+            FrmProductos frm = new FrmProductos();
+            frm.Show();
+            //IngresoCompleto();
         }
 
     }
