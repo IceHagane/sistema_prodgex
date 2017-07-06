@@ -50,6 +50,7 @@ namespace sistema_prodgex
         {
             int cod;
             string CadSql;
+<<<<<<< HEAD
             CadSql = "SELECT nom_usuario, id_tipo_usuario from usuarios where nom_usuario='"+usuario+"';";
            MySqlDataReader Rec = null;
             try
@@ -88,11 +89,17 @@ namespace sistema_prodgex
            
 
            
+=======
+            CadSql = "SELECT nom_usuario, id_tipo_usuario from usuarios where pass_usuario='"+pass+"';";
+            con.EjecutarConsulta(CadSql); 
+>>>>>>> origin/master
         }
 
         private void cmdIngresar_Click(object sender, EventArgs e)
         {
-            IngresoCompleto();
+            FrmProductos frm = new FrmProductos();
+            frm.Show();
+            //IngresoCompleto();
         }
 
     }
