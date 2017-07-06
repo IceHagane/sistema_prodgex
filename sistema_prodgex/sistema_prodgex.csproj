@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClaseArchivador.cs" />
     <Compile Include="Conexion.cs" />
     <Compile Include="LoginPrincipal.cs">
       <SubType>Form</SubType>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -47,18 +48,44 @@ namespace sistema_prodgex
 
         private void ingresar(string usuario,string pass)
         {
+            int cod;
             string CadSql;
-            CadSql = "SELECT nom_usuario, id_tipo_usuario from usuarios where pass_usuario='"+pass+"';";
-            con.EjecutarConsulta(CadSql);
-            if ( == 1)
+            CadSql = "SELECT nom_usuario, id_tipo_usuario from usuarios where nom_usuario='"+usuario+"';";
+           MySqlDataReader Rec = null;
+            try
             {
-                MessageBox.Show("Usuario o Contraseña Invalido");
-                txtUsuario.Focus();
+                con.EjecutarConsulta(CadSql);
+                while (con.Rec.Read())
+                {
+                    ClaseArchivador.username = con.Rec["nom_usuario"].ToString();
+                    ClaseArchivador.password = con.Rec["pass_usuario"].ToString();
+                   
+                    ClaseArchivador.id_privilegio = Convert.ToInt32(Rec["id_tipo_usuario"]);
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                if (Rec != null)
+                {
+                    con.CerrarConexion();
+                    Rec = null;
+                }
+            }
+            if (txtUsuario.Text.Equals(ClaseArchivador.username) && txtPassword.Text.Equals(ClaseArchivador.password))
+            {
+
             }
             else
             {
-                MessageBox.Show("Exito!");
+                MessageBox.Show("Usuario o Contraseña no valido");
             }
+           
+           
+           
 
            
         }
